@@ -1,10 +1,8 @@
 ---
 - hosts: all  
-  become: yes
-  become_method: sudo
+  become: yes  
   tasks:
-    - name: Install nethogs  (state=present is optional)
+    - name: Install nethogs
       apt:
-        update_cache: true
         name: nethogs
-        state: present
+        update_cache: true
