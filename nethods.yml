@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: no
+  gather_facts: no
+  tasks:
+    - name: Install nethogs  (state=present is optional)
+      apt:
+        name: nethogs
+        state: present
