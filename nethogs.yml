@@ -6,3 +6,4 @@
       apt:
         name: nethogs
         update_cache: true
+      become_user: user
