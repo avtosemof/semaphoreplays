@@ -1,5 +1,6 @@
 ---
 - hosts: all    
+  task:
   - name: Ensure the httpd service is running
     service:
       name: httpd
