@@ -4,8 +4,7 @@
   remote_user: semaphore
   tasks:
     - name: install nethogs
-      apt:        
-        state: installed
+      apt:                
         name: 
         - nethogs
         - curl
