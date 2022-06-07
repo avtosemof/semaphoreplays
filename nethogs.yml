@@ -1,5 +1,6 @@
 ---
 - hosts: all  
+  remote_user: semaphore
   tasks:
     - name: install nethogs
       apt:        
