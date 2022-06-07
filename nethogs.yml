@@ -3,7 +3,8 @@
   become: true
   become_method: sudo
   tasks:
-    - name: Install nethogs
-      apt:
-        name: nethogs
-        update_cache: false
+    - name: install apache2
+      apt:        
+        name: apache2 
+        state: present
+        update_cache: yes
