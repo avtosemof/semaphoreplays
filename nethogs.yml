@@ -1,7 +1,6 @@
 ---
 - hosts: all  
   become_method: sudo
-  become_user: user
   tasks:
     - name: install nethogs
       apt:        
