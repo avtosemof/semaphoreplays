@@ -2,7 +2,6 @@
 - hosts: all    
   tasks:
   - name: Ensure the httpd service is running
-    service:
-      name: httpd
-      state: started
+    apt:
+      name: nethogs      
     become: yes
