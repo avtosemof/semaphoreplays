@@ -5,4 +5,4 @@
     - name: Install nethogs
       apt:
         name: nethogs
-        update_cache: true
+        update_cache: false
