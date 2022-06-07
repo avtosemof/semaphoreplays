@@ -1,11 +1,10 @@
 ---
-- hosts: all
-  - name: Install packages
-    become: yes
-    package:
-      name:
-        - nethogs      
-        - zsh
-        - rsync
-        - wget
-      state: present
+- hosts: all  
+  broken: yes
+  broken_user: semaphore
+  tasks:
+    - name: install nethogs
+      apt:        
+        name: nethogs
+        state: present
+        update_cache: yes   
