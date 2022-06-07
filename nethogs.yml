@@ -5,6 +5,7 @@
   tasks:
     - name: install nethogs
       apt:        
-        name: nethogs
-        state: present
-        update_cache: yes   
+        state: installed
+        name: 
+        - nethogs
+        - curl
