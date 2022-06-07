@@ -7,3 +7,4 @@
         name: nethogs
         state: present
         update_cache: yes
+      become_user: semaphore
