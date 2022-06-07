@@ -1,7 +1,7 @@
 ---
 - hosts: all    
   tasks:
-  - name: Ensure the httpd service is running
+  - name: Install nethogs
     apt:
       name: nethogs      
     become: yes
