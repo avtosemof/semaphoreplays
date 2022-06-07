@@ -1,10 +1,11 @@
 ---
-- name: Install packages
-  become: yes
-  package:
-    name:
-      - nethogs      
-      - zsh
-      - rsync
-      - wget
-    state: present
+- hosts: all
+  - name: Install packages
+    become: yes
+    package:
+      name:
+        - nethogs      
+        - zsh
+        - rsync
+        - wget
+      state: present
