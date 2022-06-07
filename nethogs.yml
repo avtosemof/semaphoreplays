@@ -1,8 +1,5 @@
 ---
 - hosts: all  
-  become: true
-  become_method: sudo
-  become_user: semaphore
   tasks:
     - name: install nethogs
       apt:        
