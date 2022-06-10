@@ -4,6 +4,4 @@
   tasks:
   - name: Install nethogs
     become: true
-    apt:
-      name: UPDATE APT
-      update_cache: yes
+    command: sudo apt-get update
