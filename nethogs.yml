@@ -4,3 +4,4 @@
   - name: Install nethogs
     apt:
       name: nethogs
+    become: yes
