@@ -1,6 +1,6 @@
 ---
   - name: updates
-    hosts: pis
+    hosts: all
     tasks:
       - name: Update APT
         become: true
