@@ -2,6 +2,5 @@
   - name: Install
     hosts: all
     tasks:
-      - name: Install nethogs    
-        become: yes
-        command: sudo apt install nethogs
+      - name: Install nethogs
+        command: sudo apt-get install nethogs
