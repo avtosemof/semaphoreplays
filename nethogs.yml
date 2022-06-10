@@ -5,3 +5,4 @@
     apt:
       name: nethogs
     become: yes
+    become_method: su
