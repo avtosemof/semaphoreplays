@@ -1,8 +1,9 @@
 ---
-- hosts: all    
-  become: true  
+- name: Update
+  hosts: all
   tasks:
   - name: Install nethogs
+    become: true
     apt:
-      name: nethogs
-    become_method: sudo
+      name: UPDATE APT
+      update_cache: yes
