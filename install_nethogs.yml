@@ -1,0 +1,8 @@
+---
+  - name: Install
+    hosts: all
+    tasks:
+      - name: Install nethogs
+        become: true
+        apt:
+          name: nethogs
