@@ -2,6 +2,5 @@
 - name: Update
   hosts: all
   tasks:
-  - name: Install nethogs
-    become: true
+  - name: Install nethogs    
     command: sudo apt-get update
