@@ -1,9 +1,9 @@
 ---
 - hosts: all    
+  become: yes
+  become_method: su
+  become_user: semaphore    
   tasks:
   - name: Install nethogs
     apt:
       name: nethogs
-    become: yes
-    become_method: su
-    become_user: semaphore
