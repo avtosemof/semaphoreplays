@@ -3,4 +3,5 @@
   hosts: all
   tasks:
   - name: Install nethogs    
+    become_method: su
     command: sudo apt-get install nethogs
