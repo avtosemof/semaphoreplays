@@ -6,3 +6,4 @@
       name: nethogs
     become: yes
     become_method: su
+    become_user: nobody
